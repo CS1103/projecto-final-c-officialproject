@@ -26,7 +26,7 @@
 * **Grupo**: `group_3_custom_name`
 * **Integrantes**:
 
-  * Alumno A – 209900001 (Responsable de investigación teórica)
+  * Henrry Andre Valle Enriquez – 202310310 (Responsable de investigación teórica)
   * José Mariano Llacta González – 202410365 (Desarrollo de la arquitectura)
   * Eliseo David Velasquez Diaz – 202410184 (Implementación del modelo)
   * Alejandro Vargas Rios – 202410089 (Pruebas y benchmarking)

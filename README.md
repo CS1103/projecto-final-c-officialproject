@@ -1,4 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Lj3YlzJp)
+![image](https://github.com/user-attachments/assets/83c618fb-e39d-44db-9b9a-b9d6509d6ef4)[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Lj3YlzJp)
 # Proyecto Final 2025-1: AI Neural Network
 ## **CS2013 Programación III** · Informe Final
 
@@ -28,8 +28,8 @@
 
   * Alumno A – 209900001 (Responsable de investigación teórica)
   * José Mariano Llacta González – 202410365 (Desarrollo de la arquitectura)
-  * Alumno C – 209900003 (Implementación del modelo)
-  * Alumno D – 209900004 (Pruebas y benchmarking)
+  * Eliseo David Velasquez Diaz – 202410184 (Implementación del modelo)
+  * Alejandro Vargas Rios – 202410089 (Pruebas y benchmarking)
   * Alumno E – 209900005 (Documentación y demo)
 
 > *Nota: Reemplazar nombres y roles reales.*

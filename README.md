@@ -27,7 +27,7 @@
 * **Integrantes**:
 
   * Alumno A – 209900001 (Responsable de investigación teórica)
-  * Alumno B – 209900002 (Desarrollo de la arquitectura)
+  * José Mariano Llacta González – 202410365 (Desarrollo de la arquitectura)
   * Alumno C – 209900003 (Implementación del modelo)
   * Alumno D – 209900004 (Pruebas y benchmarking)
   * Alumno E – 209900005 (Documentación y demo)

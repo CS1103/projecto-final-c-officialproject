@@ -281,6 +281,37 @@ int main() {
 * **Casos de prueba**:
 
   * Test unitario de capa densa.
+ 
+    ```cpp
+TEST(DenseLayerTest, ForwardPass) {
+    DenseLayer layer(3, 2);
+    Matrix input(3, 1);
+    input(0,0) = 1.0; input(1,0) = 2.0; input(2,0) = 3.0;
+
+    Matrix output = layer.forward(input);
+
+    EXPECT_EQ(output.getRows(), 2);
+    EXPECT_EQ(output.getCols(), 1);
+    // Verificar que la salida tiene dimensiones correctas
+}
+
+TEST(DenseLayerTest, BackwardPass) {
+    DenseLayer layer(2, 1);
+    Matrix input(2, 1);
+    input(0,0) = 1.0; input(1,0) = 2.0;
+
+    Matrix output = layer.forward(input);
+
+    Matrix gradOutput(1, 1);
+    gradOutput(0,0) = 1.0;
+
+    Matrix gradInput = layer.backward(gradOutput);
+
+    EXPECT_EQ(gradInput.getRows(), 2);
+    EXPECT_EQ(gradInput.getCols(), 1);
+}
+```
+
   * Test de función de activación ReLU.
   * Test de convergencia en dataset de ejemplo.
 

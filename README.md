@@ -73,14 +73,21 @@
 
 #### 2.1 Arquitectura de la solución
 
-* **Patrones de diseño**: Factory Pattern: Para la creación de diferentes tipos de capas y optimizadores, permitiendo extensibilidad del sistema.
+* **Patrones de diseño**:
+*
+* Factory Pattern: Para la creación de diferentes tipos de capas y optimizadores, permitiendo extensibilidad del sistema.
 * **Estructura de carpetas (ejemplo)**:
 
 // LayerFactory.h
+
 class LayerFactory {
+
 public:
+
     static std::unique_ptr<Layer> createLayer(LayerType type, int inputSize, int outputSize);
+    
     static std::unique_ptr<ActivationFunction> createActivation(ActivationType type);
+
 };
 
  

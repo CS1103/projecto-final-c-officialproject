@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/83c618fb-e39d-44db-9b9a-b9d6509d6ef4)[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Lj3YlzJp)
+
 # Proyecto Final 2025-1: AI Neural Network
 ## **CS2013 Programación III** · Informe Final
 

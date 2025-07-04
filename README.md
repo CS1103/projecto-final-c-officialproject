@@ -314,7 +314,72 @@ TEST(DenseLayerTest, BackwardPass) {
 ```
 
   * Test de función de activación ReLU.
+
+    ```cpp
+TEST(ReLUTest, ForwardPass) {
+    ReLU relu;
+    Matrix input(2, 2);
+    input(0,0) = -1.0; input(0,1) = 2.0;
+    input(1,0) = 0.0;  input(1,1) = -3.0;
+
+    Matrix output = relu.forward(input);
+
+    EXPECT_EQ(output(0,0), 0.0);  // -1 -> 0
+    EXPECT_EQ(output(0,1), 2.0);  //  2 -> 2
+    EXPECT_EQ(output(1,0), 0.0);  //  0 -> 0
+    EXPECT_EQ(output(1,1), 0.0);  // -3 -> 0
+}
+```
+
+```cpp
+TEST(ReLUTest, BackwardPass) {
+    ReLU relu;
+    Matrix input(2, 1);
+    input(0,0) = 1.0; input(1,0) = -1.0;
+
+    Matrix gradOutput(2, 1);
+    gradOutput(0,0) = 1.0; gradOutput(1,0) = 1.0;
+
+    Matrix gradInput = relu.backward(gradOutput, input);
+
+    EXPECT_EQ(gradInput(0,0), 1.0);  // input > 0: gradiente pasa
+    EXPECT_EQ(gradInput(1,0), 0.0);  // input < 0: gradiente = 0
+}
+```
+
   * Test de convergencia en dataset de ejemplo.
+
+    ```cpp
+TEST(IntegrationTest, XORProblem) {
+    // Crear red para problema XOR
+    NeuralNetwork network;
+    network.addLayer(std::make_unique<DenseLayer>(2, 4));
+    network.addLayer(std::make_unique<ActivationLayer>(std::make_unique<ReLU>()));
+    network.addLayer(std::make_unique<DenseLayer>(4, 1));
+    network.addLayer(std::make_unique<ActivationLayer>(std::make_unique<Sigmoid>()));
+
+    network.setOptimizer(std::make_unique<Adam>(0.01));
+    network.setLossFunction(std::make_unique<MeanSquaredError>());
+
+    // Datos XOR
+    std::vector<Matrix> inputs = {
+        Matrix({{0, 0}}), Matrix({{0, 1}}),
+        Matrix({{1, 0}}), Matrix({{1, 1}})
+    };
+
+    std::vector<Matrix> targets = {
+        Matrix({{0}}), Matrix({{1}}),
+        Matrix({{1}}), Matrix({{0}})
+    };
+
+    // Entrenar
+    network.train(inputs, targets, 1000, 4);
+
+    // Verificar convergencia
+    double accuracy = network.evaluate(inputs, targets);
+    EXPECT_GT(accuracy, 0.9);  // Al menos 90% de precisión
+}
+```
 
 > *Personalizar rutas, comandos y casos reales.*
 

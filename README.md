@@ -315,7 +315,7 @@ TEST(DenseLayerTest, BackwardPass) {
 
   * Test de función de activación ReLU.
 
-    ```cpp
+```cpp
 TEST(ReLUTest, ForwardPass) {
     ReLU relu;
     Matrix input(2, 2);
@@ -346,10 +346,10 @@ TEST(ReLUTest, BackwardPass) {
     EXPECT_EQ(gradInput(1,0), 0.0);  // input < 0: gradiente = 0
 }
 ```
-
+  
   * Test de convergencia en dataset de ejemplo.
 
-    ```cpp
+```cpp
 TEST(IntegrationTest, XORProblem) {
     // Crear red para problema XOR
     NeuralNetwork network;

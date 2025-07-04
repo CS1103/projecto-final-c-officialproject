@@ -130,36 +130,67 @@ proyecto-final/
 │   │   ├── NeuralNetwork.h/cpp   # Clase principal del modelo
 
 │   │   ├── Dataset.h/cpp         # Cargador de datos MNIST
+
 │   │   └── Utils.h/cpp           # Funciones auxiliares
+
 │   ├── layers/
+
 │   │   ├── Layer.h               # Interfaz base para capas
+
 │   │   ├── DenseLayer.h/cpp      # Capa totalmente conectada
+
 │   │   ├── ActivationLayer.h/cpp # Capas de activación
+
 │   │   └── LayerFactory.h/cpp    # Factory para creación de capas
+
 │   ├── optimizers/
+
 │   │   ├── Optimizer.h           # Interfaz base para optimizadores
+
 │   │   ├── SGD.h/cpp            # Gradiente descendente estocástico
+
 │   │   ├── Adam.h/cpp           # Optimizador Adam
+
 │   │   └── RMSprop.h/cpp        # Optimizador RMSprop
+
 │   ├── activations/
+
 │   │   ├── ReLU.h/cpp           # Función de activación ReLU
+
 │   │   ├── Sigmoid.h/cpp        # Función de activación Sigmoid
+
 │   │   └── Softmax.h/cpp        # Función de activación Softmax
+
 │   ├── losses/
+
 │   │   ├── CrossEntropy.h/cpp    # Entropía cruzada categórica
+
 │   │   └── MeanSquaredError.h/cpp # Error cuadrático medio
+
 │   └── main.cpp                  # Programa principal
+
 ├── tests/
+
 │   ├── test_matrix.cpp          # Pruebas de operaciones matriciales
+
 │   ├── test_layers.cpp          # Pruebas de capas individuales
+
 │   ├── test_optimizers.cpp      # Pruebas de optimizadores
+
 │   └── test_integration.cpp     # Pruebas de integración completa
+
 ├── data/
+
 │   ├── mnist/                   # Dataset MNIST
+
 │   └── examples/                # Datos de ejemplo
+
 ├── docs/
+
 │   ├── architecture.md         # Documentación técnica
+
 │   └── demo.mp4               # Video demostrativo
+
 └── CMakeLists.txt              # Configuración de compilación
 
 #### 2.2 Manual de uso y casos de prueba

@@ -73,18 +73,17 @@
 
 #### 2.1 Arquitectura de la solución
 
-* **Patrones de diseño**: ejemplo: Factory para capas, Strategy para optimizadores.
+* **Patrones de diseño**: Factory Pattern: Para la creación de diferentes tipos de capas y optimizadores, permitiendo extensibilidad del sistema.
 * **Estructura de carpetas (ejemplo)**:
 
-  ```
-  proyecto-final/
-  ├── src/
-  │   ├── layers/
-  │   ├── optimizers/
-  │   └── main.cpp
-  ├── tests/
-  └── docs/
-  ```
+// LayerFactory.h
+class LayerFactory {
+public:
+    static std::unique_ptr<Layer> createLayer(LayerType type, int inputSize, int outputSize);
+    static std::unique_ptr<ActivationFunction> createActivation(ActivationType type);
+};
+
+ 
 
 #### 2.2 Manual de uso y casos de prueba
 

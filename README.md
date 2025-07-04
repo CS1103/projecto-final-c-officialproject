@@ -219,6 +219,24 @@ public:
 #### 2.2 Manual de uso y casos de prueba
 
 * **Cómo ejecutar**: `./build/neural_net_demo input.csv output.csv`
+
+```bash
+# Compilar el proyecto
+mkdir build && cd build
+cmake -DCMAKE_BUILD_TYPE=Release ..
+
+make -j$(nproc)
+
+# Ejecutar entrenamiento básico
+./neural_net_demo --train data/mnist/train.csv --test data/mnist/test.csv --epochs 50
+
+# Ejecutar con configuración personalizada
+./neural_net_demo --config config/network.json --output results/
+
+# Modo evaluación solamente
+./neural_net_demo --evaluate --model saved_models/best_model.bin --test data/mnist/test.csv
+```
+
 * **Casos de prueba**:
 
   * Test unitario de capa densa.

@@ -159,6 +159,62 @@ proyecto-final/
 └── CMakeLists.txt                  # Configuración de compilación
 ```
 
+#### Componentes principales implementados:
+
+### Clase Neuronal Network:
+
+Núcleo del modelo que coordina todas las operaciones.
+
+```cpp
+private:
+    std::vector<std::unique_ptr<Layer>> layers;
+    std::unique_ptr<LossFunction> lossFunction;
+    std::unique_ptr<OptimizerStrategy> optimizer;
+    std::vector<double> trainingLoss;
+
+public:
+    void addLayer(std::unique_ptr<Layer> layer);
+
+    Matrix forward(const Matrix& input);
+    void backward(const Matrix& predicted, const Matrix& actual);
+    void train(const std::vector<Matrix>& trainX, const std::vector<Matrix>& trainY,
+               int epochs, int batchSize = 32);
+    double evaluate(const std::vector<Matrix>& testX, const std::vector<Matrix>& testY);
+```
+
+### Clase Dense Layer: 
+
+
+```cpp
+class DenseLayer : public Layer {
+private:
+    Matrix weights;
+    Matrix biases;
+    Matrix lastInput;
+
+public:
+    DenseLayer(int inputSize, int outputSize);
+    Matrix forward(const Matrix& input) override;
+    Matrix backward(const Matrix& gradOutput) override;
+    void updateWeights(OptimizerStrategy* optimizer) override;
+};
+```
+
+### Optimizador Adam:
+
+Implementación del algoritmo o de optimización Adam
+
+```cpp
+class Adam : public OptimizerStrategy {
+private:
+    double learningRate, beta1, beta2, epsilon;
+    std::unordered_map<void*, Matrix> firstMoments, secondMoments;
+
+public:
+    Adam(double lr = 0.001, double b1 = 0.9, double b2 = 0.999);
+    void updateWeights(Matrix& weights, const Matrix& gradients) override;
+};
+```
 
 #### 2.2 Manual de uso y casos de prueba
 

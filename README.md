@@ -282,7 +282,8 @@ int main() {
 
   * Test unitario de capa densa.
  
-    ```cpp
+
+```cpp
 TEST(DenseLayerTest, ForwardPass) {
     DenseLayer layer(3, 2);
     Matrix input(3, 1);

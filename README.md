@@ -157,16 +157,7 @@ proyecto-final/
 │   ├── architecture.md             # Documentación técnica
 │   └── demo.mp4                    # Video demostrativo
 └── CMakeLists.txt                  # Configuración de compilación
-
-
-
-
-
-
-
-
-
-
+```text
 
 #### 2.2 Manual de uso y casos de prueba
 

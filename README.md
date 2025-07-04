@@ -558,9 +558,13 @@ TEST(PerformanceTest, LargeMatrixMultiplication) {
 ### 7. Bibliografía
 
 [1] F. Rosenblatt, “The Perceptron: A probabilistic model for information storage and organization in the brain,” Psychological Review, vol. 65, no. 6, pp. 386–408, 1958.
+
 [2] D. E. Rumelhart, G. E. Hinton, and R. J. Williams, “Learning representations by back-propagating errors,” Nature, vol. 323, no. 6088, pp. 533–536, 1986.
+
 [3] I. Goodfellow, Y. Bengio, and A. Courville, Deep Learning. MIT Press, 2016.
+
 [4] D. P. Kingma and J. L. Ba, “Adam: A Method for Stochastic Optimization,” in Proc. 3rd Int. Conf. on Learning Representations (ICLR), 2015.
+
 [5] J. Schmidhuber, “Deep learning in neural networks: An overview,” Neural Networks, vol. 61, pp. 85–117, 2015.
 
 

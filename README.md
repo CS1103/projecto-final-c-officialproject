@@ -89,7 +89,7 @@ public:
 
 };
 
-Strategy Pattern: Para algoritmos de optimización intercambiables (SGD, Adam, RMSprop).
+* **Strategy Pattern**: Para algoritmos de optimización intercambiables (SGD, Adam, RMSprop).
 
 // OptimizerStrategy.h
 
@@ -103,7 +103,7 @@ public:
 
 };
 
-Observer Pattern: Para monitoreo del progreso de entrenamiento.
+**Observer Pattern**: Para monitoreo del progreso de entrenamiento.
 
 // TrainingObserver.h
 
@@ -120,10 +120,15 @@ public:
 * **Estructura de carpetas (ejemplo)**:
 
 proyecto-final/
+
 ├── src/
+
 │   ├── core/
+
 │   │   ├── Matrix.h/cpp          # Operaciones matriciales optimizadas
+
 │   │   ├── NeuralNetwork.h/cpp   # Clase principal del modelo
+
 │   │   ├── Dataset.h/cpp         # Cargador de datos MNIST
 │   │   └── Utils.h/cpp           # Funciones auxiliares
 │   ├── layers/

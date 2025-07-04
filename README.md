@@ -237,6 +237,47 @@ make -j$(nproc)
 ./neural_net_demo --evaluate --model saved_models/best_model.bin --test data/mnist/test.csv
 ```
 
+* **Ejemplo de uso pragmático**:
+
+```cpp
+#include "NeuralNetwork.h"
+#include "DenseLayer.h"
+#include "ActivationLayer.h"
+#include "Adam.h"
+#include "CrossEntropy.h"
+
+int main() {
+    // Crear la red neuronal
+    NeuralNetwork network;
+
+    // Arquitectura: 784 -> 128 -> 64 -> 10
+    network.addLayer(std::make_unique<DenseLayer>(784, 128));
+    network.addLayer(std::make_unique<ActivationLayer>(std::make_unique<ReLU>()));
+    network.addLayer(std::make_unique<DenseLayer>(128, 64));
+    network.addLayer(std::make_unique<ActivationLayer>(std::make_unique<ReLU>()));
+    network.addLayer(std::make_unique<DenseLayer>(64, 10));
+    network.addLayer(std::make_unique<ActivationLayer>(std::make_unique<Softmax>()));
+
+    // Configurar optimización
+    network.setOptimizer(std::make_unique<Adam>(0.001));
+    network.setLossFunction(std::make_unique<CrossEntropy>());
+
+    // Cargar datos
+    DataLoader loader;
+    auto [trainX, trainY] = loader.loadMNIST("data/mnist_train.csv");
+    auto [testX, testY] = loader.loadMNIST("data/mnist_test.csv");
+
+    // Entrenar
+    network.train(trainX, trainY, 50, 64);
+
+    // Evaluar
+    double accuracy = network.evaluate(testX, testY);
+    std::cout << "Precisión: " << accuracy * 100 << "%" << std::endl;
+
+    return 0;
+}
+```
+
 * **Casos de prueba**:
 
   * Test unitario de capa densa.

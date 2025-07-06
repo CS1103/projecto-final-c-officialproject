@@ -43,18 +43,16 @@ Este proyecto consiste en la implementación de una red neuronal multicapa en C+
 
    * CMake 3.18+
    * Eigen 3.4
-   * \[Otra librería opcional]
+   *  OpenMP (para paralelización opcional)
 3. **Instalación**:
 
    ```bash
-   git clone https://github.com/EJEMPLO/proyecto-final.git
-   cd proyecto-final
-   mkdir build && cd build
-   cmake ..
-   make
-   ```
+git clone https://github.com/patri/proyecto-red-neuronal.git
+cd proyecto-red-neuronal
+mkdir build && cd build
+cmake ..
+make
 
-> *Ejemplo de repositorio y comandos, ajustar según proyecto.*
 
 ---
 

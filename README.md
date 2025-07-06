@@ -627,10 +627,10 @@ TEST(PerformanceTest, LargeMatrixMultiplication) {
 
 ### 6. Conclusiones
 
-* **Logros**: Implementar NN desde cero, validar en dataset de ejemplo.
-* **Evaluación**: Calidad y rendimiento adecuados para propósito académico.
-* **Aprendizajes**: Profundización en backpropagation y optimización.
-* **Recomendaciones**: Escalar a datasets más grandes y optimizar memoria.
+* **Logros**: Implementar una red neuronal desde cero, incluyendo forward pass, backpropagation, optimización y validación con datasets como XOR y MNIST.
+* **Evaluación**: Se alcanzó precisión competitiva (93.7% en MNIST) y se logró optimización aceptable del tiempo de entrenamiento.
+* **Aprendizajes**: Comprensión práctica de estructuras de red, funciones de activación, inicialización, y técnicas de aceleración como OpenMP.
+* **Recomendaciones**: Integrar medición continua de métricas durante el entrenamiento, escalar a datasets más complejos y optimizar uso de memoria.
 
 ---
 

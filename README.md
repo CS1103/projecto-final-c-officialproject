@@ -521,7 +521,12 @@ TEST(PerformanceTest, LargeMatrixMultiplication) {
 
 * **Métricas de ejemplo**:
 
-  * Iteraciones: 1000 épocas.
+  * Iteraciones:
+ 
+    -XOR: 1000 épocas
+
+    -MNIST: 50 épocas
+    
   * Tiempo total de entrenamiento: 2m30s.
   * Precisión final: 92.5%.
 * **Ventajas/Desventajas**:

@@ -507,7 +507,10 @@ TEST(PerformanceTest, LargeMatrixMultiplication) {
 
 > **Demo de ejemplo**: Video/demo alojado en `docs/demo.mp4`.
 > Pasos:
->
+
+>https://docs.google.com/document/d/1aYQeu96UChuMiWIxDHBO-Flj3A8yswfZ1ECe_l8x34I/edit?tab=t.0
+ 
+
 > 1. Preparar datos de entrenamiento (formato CSV).
 > 2. Ejecutar comando de entrenamiento.
 > 3. Evaluar resultados con script de validación.

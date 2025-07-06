@@ -6,8 +6,6 @@
 
 Este proyecto consiste en la implementación de una red neuronal multicapa en C++ para la clasificación de dígitos manuscritos. Utiliza técnicas de aprendizaje supervisado y algoritmos de retropropagación para entrenar el modelo. Se enfoca en el procesamiento de datos del tipo imagen (como los del dataset MNIST). El objetivo es demostrar el funcionamiento de redes neuronales sin usar librerías externas. Es un trabajo final del curso CS2013 Programación III.
 
-> Ejemplo: Implementación de una red neuronal multicapa en C++ para clasificación de dígitos manuscritos.
-
 ### Contenidos
 
 1. [Datos generales](#datos-generales)

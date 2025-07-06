@@ -615,11 +615,11 @@ TEST(PerformanceTest, LargeMatrixMultiplication) {
 
 | Tarea                     | Miembro  | Rol                       |
 | ------------------------- | -------- | ------------------------- |
-| Investigación teórica     | Alumno A | Documentar bases teóricas |
-| Diseño de la arquitectura | Alumno B | UML y esquemas de clases  |
-| Implementación del modelo | Alumno C | Código C++ de la NN       |
-| Pruebas y benchmarking    | Alumno D | Generación de métricas    |
-| Documentación y demo      | Alumno E | Tutorial y video demo     |
+| Investigación teórica     | Henrry Andre Valle Enríquez | Documentar bases teóricas |
+| Diseño de la arquitectura | José Mariano Llacta González | UML y esquemas de clases  |
+| Implementación del modelo | Eliseo David Velásquez Díaz | Código C++ de la NN       |
+| Pruebas y benchmarking    | Alejandro Vargas Ríos | Generación de métricas    |
+| Documentación y demo      | José Mariano Llacta González | Tutorial y video demo     |
 
 > *Actualizar con tareas y nombres reales.*
 

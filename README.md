@@ -53,8 +53,6 @@ cd proyecto-red-neuronal
 mkdir build && cd build
 cmake ..
 make
-
-
 ---
 
 ### 1. Investigación teórica

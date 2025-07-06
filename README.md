@@ -591,14 +591,23 @@ TEST(PerformanceTest, LargeMatrixMultiplication) {
 
   Mejora de convergencia (~20% más rápida)
    
-* **Ventajas/Desventajas**:
+## Ventajas/Desventajas:
 
-  * * Código ligero y dependencias mínimas.
-  * – Sin paralelización, rendimiento limitado.
-* **Mejoras futuras**:
+- **Código ligero y dependencias mínimas.**
 
-  * Uso de BLAS para multiplicaciones (Justificación).
-  * Paralelizar entrenamiento por lotes (Justificación).
+- **Sin paralelización, rendimiento limitado.**
+
+---
+
+## Mejoras futuras:
+
+- **Uso de BLAS para multiplicaciones**  
+
+  Justificación: Mejora el rendimiento de operaciones matriciales.
+
+- **Paralelizar entrenamiento por lotes**  
+
+  Justificación: Permite acelerar el entrenamiento utilizando múltiples núcleos/procesadores.
 
 ---
 

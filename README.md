@@ -56,6 +56,7 @@ mkdir build && cd build
 cmake ..
 
 make
+```bash
 
 
 ### 1. Investigación teórica

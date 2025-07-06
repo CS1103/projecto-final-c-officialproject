@@ -45,14 +45,13 @@ Este proyecto consiste en la implementación de una red neuronal multicapa en C+
    * Eigen 3.4
    *  OpenMP (para paralelización opcional)
 3. **Instalación**:
-
-
-   ```bash
+```bash
 git clone https://github.com/patri/proyecto-red-neuronal.git
 cd proyecto-red-neuronal
 mkdir build && cd build
 cmake ..
 make
+
 ---
 
 ### 1. Investigación teórica

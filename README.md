@@ -47,7 +47,7 @@ Este proyecto consiste en la implementación de una red neuronal multicapa en C+
 3. **Instalación:**
 
 ```bash
-git clone https://github.com/TU-USUARIO/proyecto-red-neuronal.git
+git clone https://github.com/patri/proyecto-red-neuronal.git
 cd proyecto-red-neuronal
 mkdir build && cd build
 cmake ..
